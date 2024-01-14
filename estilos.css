@@ -12,15 +12,18 @@ body {
     margin-left: 20px;
     padding: 1px;
 }
+.h3 ,h3 {
+    font-size: calc(1.3rem + .6vw);
+margin: 64px;
+}
 
 .logonav2 {
-    background-image: auto;
-    height: 296px;
-    width: 100%; /* Hacer que la imagen ocupe el 100% del ancho */
-    margin-bottom: -35px;
-    margin-left: -12px;
-    padding: 92px;
-    background-size: cover; /* Ajustar el tamaño de la imagen */
+    height: 300px;
+width: 51%;
+margin-bottom: -35px;
+margin-left: -12px;
+padding: 92px;
+background-size: cover;
 }
 
 header {
@@ -72,6 +75,13 @@ video {
     .logonav {
         margin-bottom: 0;
     }
+    .logonav2 {
+        width: 104%;
+margin-bottom: -35px;
+margin-left: -12px;
+padding: 92px;
+background-size: cover;
+    }
 
     video {
         width: 100%;
@@ -87,7 +97,13 @@ video {
     header {
         padding: 0.5em;
     }
-
+    .logonav2 {
+        width: 51%;
+margin-bottom: -35px;
+margin-left: -12px;
+padding: 92px;
+background-size: cover;
+    }
     .logonav {
         margin-left: 10px;
     }
@@ -135,4 +151,7 @@ video {
     margin-bottom: 5px; /* Espacio entre comentarios */
     border-bottom: 1px solid #ccc; /* Línea divisoria entre comentarios */
     padding-bottom: 5px; /* Espacio adicional debajo de cada comentario */
+  }
+  .formulario{
+    padding: 20px;
   }
