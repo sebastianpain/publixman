@@ -14,11 +14,13 @@ body {
     
 }
 .logonav2 {
-    height: 308px;
-width: 508px;
-margin-bottom: -35px;
-margin-left: -12px;
-padding: 1px;
+    background-image: auto;
+    height: 296px;
+    width: 508px;
+    margin-bottom: -35px;
+    margin-left: -12px;
+    padding: 92px;
+    
     
 }
 
