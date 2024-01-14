@@ -14,12 +14,12 @@
     <nav>
 
     <img src="img/LOGO 0 .png" alt="" class="logonav">
-    <title>publixman</title>
+    <!-- <title class="titulo">publixman</title> -->
 </nav>
   </head>
   <body>
     <header>
-      <h1>publixman</h1>
+      <img src="img/LOGO 2.png" alt="" class="logonav2">
     </header>
 
     <main>
@@ -108,6 +108,20 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // JavaScript for adding movement to the logo and title
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get references to the logo and title elements
+        const logo = document.querySelector('.logonav');
+        const title = document.querySelector('header h2.section-title');
+    
+        // Add a class to the logo for movement
+        logo.classList.add('logo-move');
+    
+        // Add animation to the title using a CSS class
+        title.classList.add('title-move');
+      });
+    </script>
     <!-- Aquí puedes incluir tus scripts de JavaScript al final del body para asegurar que se carguen después del contenido HTML -->
     <script>
       // Tu código JavaScript aquí

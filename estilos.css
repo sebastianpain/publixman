@@ -11,13 +11,30 @@ body {
     margin-bottom: -120px;
     margin-left: 20px;
     padding: 1px;
+    
+}
+.logonav2 {
+    height: 308px;
+width: 508px;
+margin-bottom: -35px;
+margin-left: -12px;
+padding: 1px;
+    
 }
 
 header {
-    background-color: #8162c2;
+    background-color: #d3c6f0;
     color: #fff;
     text-align: center;
     padding: 1em;
+}
+
+.titulo {
+    font-family: "Koi Medium";
+    text-shadow: 2px solid rgba(355, 255, 255, 0.7); /* Borde luminoso */
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 main {
@@ -25,45 +42,83 @@ main {
 }
 
 video {
-    width: 100%; /* Adjusted to full width for responsiveness */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ajustado al 100% para ser responsivo */
+    height: auto; /* Mantiene la proporción de aspecto */
     margin-bottom: 20px;
 }
-.inst{
-        display: inline-block;
-        vertical-align: top;
-        max-width: 50%;
-        margin-left: 206px;
-        background-size: auto;
+
+.inst {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 50%;
+    margin-left: 206px;
+    background-size: auto;
 }
+
 .carouselslide {
-    background-size: cover; /* Ensure background image covers the entire container */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
 }
 
 .logo2 {
-    background-size: auto; /* Adjust as needed */
+    background-size: auto; /* Ajustar según sea necesario */
     width: 289px;
     height: 125px;
     background-position: center;
+    animation: rotateLogo 4s infinite linear; /* Animación de rotación */
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries para Diseño Responsivo */
 @media screen and (max-width: 768px) {
     .logonav {
-        margin-bottom: 0; /* Adjust margin for smaller screens */
+        margin-bottom: 0; /* Ajusta el margen para pantallas más pequeñas */
     }
 
     video {
-        width: 100%; /* Adjust video width for smaller screens */
+        width: 100%; /* Ajusta el ancho del video para pantallas más pequeñas */
     }
 }
 
 @media screen and (max-width: 480px) {
     header {
-        padding: 0.5em; /* Adjust header padding for smaller screens */
+        padding: 0.5em; /* Ajusta el padding del header para pantallas más pequeñas */
     }
 
     .logonav {
-        margin-left: 10px; /* Adjust margin for smaller screens */
+        margin-left: 10px; /* Ajusta el margen para pantallas más pequeñas */
+    }
+}
+
+.logo-move {
+    animation: moveLogo 2s infinite alternate;
+}
+
+.title-move {
+    animation: moveTitle 2s infinite alternate;
+}
+
+@keyframes moveLogo {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes moveTitle {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
