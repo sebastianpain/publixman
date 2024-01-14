@@ -11,19 +11,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="estilos.css" />
+    
     <!-- Reemplaza "estilos.css" con la ruta correcta a tu archivo CSS -->
     <nav>
 
     <img src="img/LOGO 0 .png" alt="" class="logonav">
     <!-- <title class="titulo">publixman</title> -->
 </nav>
+<script src="comentarios.js"></script>
+
   </head>
   <body>
     <header>
       <img src="img/LOGO 2.png" alt="" class="logonav2">
     </header>
 
-    <main>
+    
+      <main class="container mt-4">
+        <!-- Formulario simple con Bootstrap -->
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingresa tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </form>
+    </main>
       <video controls>
         <source src="img/publixman.mp4" type="video/mp4" class="video" />
       </video>
@@ -123,14 +145,57 @@
         title.classList.add('title-move');
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const logo = document.querySelector('.logonav');
+          const title = document.querySelector('header h2.section-title');
+
+          logo.classList.add('logo-move');
+          title.classList.add('title-move');
+
+          // Obtener referencia al formulario
+          const formulario = document.querySelector('form');
+
+          // Obtener referencia al contenedor de comentarios en el footer
+          const comentariosContainer = document.getElementById('comentarios-container');
+
+          // Escuchar el evento submit del formulario
+          formulario.addEventListener('submit', function (event) {
+              event.preventDefault(); // Evitar que el formulario se envíe
+
+              // Obtener los valores del formulario
+              const nombre = document.getElementById('nombre').value;
+              const email = document.getElementById('email').value;
+              const mensaje = document.getElementById('mensaje').value;
+
+              // Crear un nuevo comentario
+              const nuevoComentario = document.createElement('p');
+              nuevoComentario.textContent = `Nombre: ${nombre}, Email: ${email}, Mensaje: ${mensaje}`;
+
+              // Agregar el comentario al contenedor en el footer
+              comentariosContainer.appendChild(nuevoComentario);
+
+              // Limpiar el formulario después de agregar el comentario
+              formulario.reset();
+          });
+      });
+  </script>
+
+  <!-- Scripts de Bootstrap y cualquier otro script adicional que necesites -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!-- Aquí puedes incluir tus scripts de JavaScript al final del body para asegurar que se carguen después del contenido HTML -->
     <script>
       // Tu código JavaScript aquí
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7339125435257877"
     crossorigin="anonymous"></script>
     <footer>
-        <div class="container text-center pt-5 pb-5"></div>     
+      <div class="container text-center pt-5 pb-5" id="comentarios-container">
+        <h3>Comentarios:</h3>
+        <div id="comentarios-list" class="list-group"></div>
+      </div>
         </footer>
     
   </body>
