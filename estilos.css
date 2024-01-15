@@ -63,11 +63,11 @@ video {
 }
 
 .logo2 {
-    background-size: contain; /* Cambiado a contener para ajustar */
-    width: 100%; /* Hacer que el logo ocupe el 100% del ancho */
-    height: auto; /* Hacer que la altura sea automática */
-    background-position: center;
-    animation: rotateLogo 4s infinite cubic-bezier(0, 0, 0.04, 0.93);
+    width: 1500px;
+/* background-position: center; */
+animation: rotateLogo 4s infinite cubic-bezier(0, 0, 0.04, 0.93);
+height: 217px;
+
     
 }
 
