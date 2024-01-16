@@ -18,12 +18,13 @@ margin: 64px;
 }
 
 .logonav2 {
-    height: 1000px;
-width: 80%;
-margin-bottom: -35px;
-margin-left: -12px;
-padding: 92px;
-background-size: cover;
+    background-position: auto;
+    height: 1200px;
+    width: 1100px;
+    
+    
+
+
 }
 
 header {
@@ -63,7 +64,7 @@ video {
 }
 
 .logo2 {
-    width: 1500px;
+    width: 100px;
 /* background-position: center; */
 animation: rotateLogo 4s infinite cubic-bezier(0, 0, 0.04, 0.93);
 height: 217px;
@@ -77,8 +78,11 @@ height: 217px;
         margin-bottom: 0;
     }
     .logonav2 {
+        background-position: auto;
         height: 500px;
         width: 500px;
+        margin:-20px;
+        margin-top: 10px;
 
 
     }
