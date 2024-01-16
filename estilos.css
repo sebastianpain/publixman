@@ -1,161 +1,162 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-.logonav {
-  height: 60px;
-  width: 60px;
-  margin-bottom: -120px;
-  margin-left: 20px;
-  padding: 1px;
-}
-.h3,
-h3 {
-  font-size: calc(1.3rem + 0.6vw);
-  margin: 64px;
-}
-
-.logonav2 {
-  background-position: auto;
-  height: 1200px;
-  width: 1100px;
-
-  margin-top: -20px;
-}
-
-header {
-  background-color: #d3c6f0;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-}
-
-.titulo {
-  font-family: "Koi Medium";
-  text-shadow: 2px solid rgba(355, 255, 255, 0.7);
-  padding: 10px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-main {
-  padding: 20px;
-}
-
-video {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.inst {
-  display: block; /* Cambiado a bloque para ocupar el ancho completo */
-  max-width: 100%; /* Ajustado para ser responsivo */
-  margin-left: 0; /* Ajuste del margen */
-  background-size: cover;
-}
-
-.carouselslide {
-  background-size: cover;
-}
-
-.logo2 {
-  width: 100px;
-  /* background-position: center; */
-  animation: rotateLogo 4s infinite cubic-bezier(0, 0, 0.04, 0.93);
-  height: 217px;
-}
-
-/* Media Queries para Diseño Responsivo */
-@media screen and (max-width: 768px) {
-  .logonav {
-    margin-bottom: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
   }
+  
+  .logonav {
+    height: 60px;
+    width: 60px;
+    margin-bottom: -120px;
+    margin-left: 20px;
+    padding: 1px;
+  }
+  
+  .h3,
+  h3 {
+    font-size: calc(1.3rem + 0.6vw);
+    margin: 64px;
+  }
+  
   .logonav2 {
     background-position: auto;
-    height: 500px;
-    width: 500px;
-    margin: -20px;
-    margin-top: 10px;
+    height: 1200px;
+    width: 1100px;
+    margin-top: -20px;
   }
-
+  
+  header {
+    background-color: #d3c6f0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .titulo {
+    font-family: "Koi Medium";
+    text-shadow: 2px solid rgba(355, 255, 255, 0.7);
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
   video {
     width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
-
-  .inst {
+  
+  .inst,
+  .carouselslide {
+    display: block;
     max-width: 100%;
     margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    padding: 0.5em;
-  }
-  .logonav2 {
-    width: 109%;
-    margin-bottom: -35px;
-    margin-left: -12px;
-    padding: 92px;
     background-size: cover;
   }
-  .logonav {
-    margin-left: 10px;
+  
+  .logo2 {
+    width: 100px;
+    height: 217px;
+    animation: rotateLogo 4s infinite cubic-bezier(0, 0, 0.04, 0.93);
   }
-}
-.logo2 {
-  width: 1200px;
-  height: 1200px;
-  margin-top: -600px;
-}
-
-.logo-move {
-  animation: moveLogo 2s infinite alternate;
-}
-
-.title-move {
-  animation: moveTitle 2s infinite alternate;
-}
-
-@keyframes moveLogo {
-  from {
-    transform: translateX(0);
+  
+  /* Media Queries para Diseño Responsivo */
+  @media screen and (max-width: 768px) {
+    .logonav {
+      margin-bottom: 0;
+    }
+    .logonav2 {
+      background-position: auto;
+      height: 500px;
+      width: 500px;
+      margin: -20px;
+      margin-top: 10px;
+    }
+  
+    video {
+      width: 100%;
+    }
+  
+    .inst,
+    .carouselslide {
+      max-width: 100%;
+      margin-left: 0;
+    }
   }
-  to {
-    transform: translateX(10px);
+  
+  @media screen and (max-width: 480px) {
+    header {
+      padding: 0.5em;
+    }
+    .logonav2 {
+      width: 109%;
+      margin-bottom: -35px;
+      margin-left: -12px;
+      padding: 92px;
+      background-size: cover;
+    }
+    .logonav {
+      margin-left: 10px;
+    }
   }
-}
-
-@keyframes moveTitle {
-  from {
-    transform: translateY(0);
+  
+  .logo2 {
+    width: 1200px;
+    height: 1200px;
+    margin-top: -600px;
   }
-  to {
-    transform: translateY(5px);
+  
+  .logo-move {
+    animation: moveLogo 2s infinite alternate;
   }
-}
-
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0deg);
+  
+  .title-move {
+    animation: moveTitle 2s infinite alternate;
   }
-  to {
-    transform: rotate(360deg);
+  
+  @keyframes moveLogo {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(10px);
+    }
   }
-}
-#comentarios-list {
-  margin-top: 10px; /* Espacio entre el h3 y los comentarios */
-}
-
-#comentarios-list p {
-  margin-bottom: 5px; /* Espacio entre comentarios */
-  border-bottom: 1px solid #ccc; /* Línea divisoria entre comentarios */
-  padding-bottom: 5px; /* Espacio adicional debajo de cada comentario */
-}
-.formulario {
-  padding: 20px;
-}
+  
+  @keyframes moveTitle {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+  
+  @keyframes rotateLogo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #comentarios-list {
+    margin-top: 10px;
+  }
+  
+  #comentarios-list p {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .formulario {
+    padding: 20px;
+  }
+  
