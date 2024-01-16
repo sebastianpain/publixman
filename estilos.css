@@ -26,6 +26,7 @@ h3 {
     width: 1100px;
     margin-top: -20px;
     background-size: cover; /* Added background-size property */
+    
 }
 
 header {
@@ -106,19 +107,21 @@ video {
     }
     .logonav2 {
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 10px;
-        background-size: cover; /* Added background-size property */
+         /* Added background-size property */
+        margin-bottom: -200px;
     }
     .logonav {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
 
 .logo2 {
     width: 1000px;
     height: auto;
-    margin-top: -1000px;
+    margin-top: -892px;
     margin-left: -300px;
 }
 
