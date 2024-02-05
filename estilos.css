@@ -81,9 +81,8 @@ video {
         margin-bottom: 0;
     }
     .logonav2 {
-        background-position: auto;
-        height: 500px;
-        width: 500px;
+        height: 491px;
+        width: 412px;
         margin: -20px;
         margin-top: 10px;
         background-size: cover; /* Added background-size property */
